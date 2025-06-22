@@ -1,0 +1,214 @@
+<!-- Main HTML file for Afra's Portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Sections Website</title>
+    <!-- Stylesheets and Google Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <!-- Burger menu for mobile navigation -->
+        <div class="burger-menu">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Navigation title/logo -->
+        <div class="nav-title">
+            <img src="media/name.png" alt="Afra's Portfolio" class="nav-title-img">
+        </div>
+    </nav>
+
+    <!-- Menu overlay for navigation links -->
+    <div class="menu-overlay">
+        <div class="menu-content">
+            <button data-section="tab1">About</button>
+            <button data-section="tab2">Projects</button>
+            <button data-section="tab3">Connect</button>
+        </div>
+    </div>
+
+    <!-- Home Header with Mouse-Follow Blur Effect -->
+    <div class="home-header">
+        <div class="bg-image" id="bgImage"></div>
+        <div class="bg-text">
+            <h1 class="home-title">Step into my Space</h1>
+            <p class="home-subtitle">Worlds, Work, Whimsy</p>
+            <div class="home-cta">
+                <button class="scroll-down-btn" onclick="scrollToContent()">
+                    <span>Discover More</span>
+                    <div class="scroll-arrow">↓</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content sections -->
+    <main class="content">
+        <!-- Section 1: About -->
+        <section id="tab1" class="section section1" data-bg="#fef6e4">
+            <h2 class="tab-category-title">About Me, briefly</h2>
+            <div class="widgets-row">
+                <div class="widget-main-split">
+                    <div class="widget widget-main-long flip-widget" id="divine-love-flip">
+                        <div class="flip-front">
+                            <div class="widget-title">Academic Roots</div>
+                            <div class="widget-quote">click to see my academic roots</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="widget-title">Academic Roots</div>
+                            <div class="widget-quote">
+                                <div>🎓 New York University Abu Dhabi</div>
+                                <div>📘 B.A. in Interactive Media</div>
+                                <div>📅 2023-Present</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-main-bottom-row">
+                        <div class="widget widget-main-small flip-widget" id="compassion-flip">
+                            <div class="flip-front">
+                                <div class="widget-title">Things I Love</div>
+                                <div class="widget-quote">click to see my hobbies</div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="compassion-images">
+                                    <img src="media/pilates.png" alt="Pilates" class="compassion-img" />
+                                    <img src="media/skincare.png" alt="Skincare" class="compassion-img" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget widget-main-small flip-widget" id="gratitude-flip">
+                            <div class="flip-front">
+                                <div class="widget-title">My Strengths</div>
+                                <div class="widget-quote">click to see my strengths</div>
+                            </div>
+                            <div class="flip-back">
+                                <div class="widget-title">My Strengths</div>
+                                <div class="widget-quote">
+                                    <div>💬 Clear communicator</div>
+                                    <div>⏰ Deadline-oriented</div>
+                                    <div>💅 Radiates good vibes</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget widget-main-long flip-widget" id="places-flip">
+                        <div class="flip-front">
+                            <div class="widget-title">Places I've Been</div>
+                            <div class="widget-quote">Click to see my travel map!</div>
+                        </div>
+                        <div class="flip-back">
+                            <div class="widget-title">Places I've Been</div>
+                            <div class="map-embed-container">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1e2ILbKUUaFFB4eFDdJ31j75te2mzGnU" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-side-col">
+                    <div class="widget widget-side">
+                        <img src="media/about.png" alt="About" class="side-widget-image" />
+                    </div>
+                    <div class="widget widget-side">
+                        <div class="widget widget-main-sidecol">
+                            <img src="media/image5.png" alt="About" class="side-widget-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 2: Projects -->
+        <section id="tab2" class="section section2" data-bg="#98c1d9">
+            <h2 class="tab-category-title">My latest projects</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow left" aria-label="Previous">&#8592;</button>
+                <div class="carousel-track">
+                    <div class="carousel-widget" data-index="0">
+                        <div class="widget-title">The Last Line is Mine</div>
+                        <a href="https://afary8.github.io/Afra.Commlab-25/" target="_blank" rel="noopener noreferrer">
+                            <img src="media/image1.png" alt="The Last Line is Mine project preview" class="widget-image-link" />
+                        </a>
+                        <div class="widget-quote">A poetic short film about claiming identity in a space meant to showcase others stories</div>
+                    </div>
+                    <div class="carousel-widget" data-index="1">
+                        <div class="widget-title">DoYourChores!</div>
+                        <a href="https://evva5667.github.io/Do-Your-Chores-First-/" target="_blank" rel="noopener noreferrer">
+                            <img src="media/image2.png" alt="DoYourChores! project preview" class="widget-image-link" />
+                        </a>
+                        <div class="widget-quote">An interactive comic about a Wi-Fi-hungry teen, a clever grandma, and the unexpected rules of effort and respect</div>
+                    </div>
+                    <div class="carousel-widget" data-index="2">
+                        <div class="widget-title">In the Eyes of Then</div>
+                        <a href="https://mha9507.github.io/Assignment-3/index.html" target="_blank" rel="noopener noreferrer">
+                            <img src="media/image3.png" alt="In the Eyes of Then project preview" class="widget-image-link" />
+                        </a>
+                        <div class="widget-quote">An interactive sound-driven experience that takes you on a nostalgic journey through childhood mornings</div>
+                    </div>
+                    <div class="carousel-widget" data-index="3">
+                        <div class="widget-title">Afternoon Nap</div>
+                        <a href="https://mahlet333.github.io/Afternoon_Nap_Movie/" target="_blank" rel="noopener noreferrer">
+                            <img src="media/image4.png" alt="Afternoon Nap project preview" class="widget-image-link" />
+                        </a>
+                        <div class="widget-quote">An interactive short film about the blurred lines between dreams and reality, exploring the dynamics of roommates.</div>
+                    </div>
+                </div>
+                <button class="carousel-arrow right" aria-label="Next">&#8594;</button>
+            </div>
+        </section>
+        <!-- Section 3: Connect -->
+        <section id="tab3" class="section section3" data-bg="#ffe5d0">
+            <h2 class="tab-category-title">Want to Connect?</h2>
+            <div class="widgets-row widgets-row-split">
+                <div class="widget widget-main-large contact-widget">
+                    <h3 class="contact-title">Feel Free to Reach Out!</h3>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="contact-row">
+                            <div class="contact-col">
+                                <input type="text" id="fname" name="firstname" placeholder="Name">
+                            </div>
+                            <div class="contact-col">
+                                <input type="text" id="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="widget-main-sidecol">
+                    <div class="widget widget-main-small">
+                        <div class="widget-title">Collaboration</div>
+                        <div class="widget-quote">"Stronger together"</div>
+                    </div>
+                    <div class="widget widget-main-small collaboration-widget">
+                        <div class="collaboration-icons">
+                            <div class="widget-title">For more:</div>
+                            <img src="media/email.jpg" alt="Email" class="collab-icon" />
+                            <img src="media/whatsapp.jpg" alt="WhatsApp" class="collab-icon" />
+                            <img src="media/instagram.jpg" alt="Instagram" class="collab-icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="menu-overlay">
+        <div class="menu-content">
+            <button data-section="tab1">About</button>
+            <button data-section="tab2">Projects</button>
+            <button data-section="tab3">Connect</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
